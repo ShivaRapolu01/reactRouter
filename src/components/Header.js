@@ -18,7 +18,7 @@ export default function Header({login,setlogin}) {
               <Link to="/Profile" className='text-link' > Profile</Link>
               </li>
               <li>
-                <button className='status' onClick={()=>setlogin(!login)}>{login?"Login":"Log out"}</button>
+                <button className='status' onClick={()=>setlogin(!login)}>{login?"Log out":"LogIn"}</button>
               </li>
             </ul>
            </div>

@@ -16,9 +16,10 @@ function App() {
       <div className="App">
           <Header  login={login} setlogin={setlogin}/>
           <Routes>
+                
                 <Route  path="/" element={<Home/>}/>
-                <Route  path="/about" element={<About/>}/>
-                <Route  path="/profile" element={<Profile/>}/>
+                <Route  path="/about" element={<About login={login}/>}/>
+                <Route  path="/profile/*" element={<Profile login={login}/>}/>
                 <Route path='/post/' element={<Post/>}>
                     <Route path='/post/:postId' element={<Post/>}/>
                 </Route>
